@@ -1,0 +1,51 @@
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-main-container {
+  background-color: white;
+  width: 400px;
+  height: 550px;
+  border-radius: 15px;
+  /* padding: 250px 125px; */
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+  color: white;
+}
+
+.input-text-with-btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+input {
+  width: 60%;
+  height: 30px;
+}
+
+button {
+  width: 20%;
+  border-radius: 5px;
+  background-color: purple;
+  color: white;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: darkmagenta;
+}
+
+ol {
+  list-style-type: none;
+}
