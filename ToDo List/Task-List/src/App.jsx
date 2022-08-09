@@ -1,11 +1,11 @@
 import './App.css'
-import Calculator from './assets/Components/Calculator'
+import MyToDo from './assets/Components/Todo'
 
 
 function App() {
   return (
     <>
-    <Calculator/>
+    <MyToDo/>
     </>
   )
 }

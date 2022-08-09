@@ -39,6 +39,7 @@ button {
   background-color: purple;
   color: white;
   font-weight: 700;
+  border-style: none;
 }
 
 button:hover {
@@ -47,5 +48,8 @@ button:hover {
 }
 
 ol {
-  list-style-type: none;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 10px;
 }

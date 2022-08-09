@@ -1,0 +1,16 @@
+.single-task {
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+}
+
+.single-task button {
+  width: 20%;
+  height: 30px;
+  border-style: none;
+}
+
+li {
+  color: purple;
+  font-weight: 700;
+}
