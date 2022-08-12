@@ -1,15 +1,18 @@
-import React from "react"
-import "./ToDoList.css"
-
-function ShowToDoList(props){
-    // function deleteToDo(){
-    //     console.log("LN06", props.taskUniqueId);
-    // }
-    return (
+import React from "react";
+import "./ToDo.css";
+function ShowToDoList(props) {
+  // function deleteToDo(){
+  //     console.log("LN06", props.taskUniqueId);
+  // }
+  return (
     <div className="single-task">
-    <li key={props.uniqueId}>{props.item}</li>
-    <button id="delete-btn" onClick={()=>props.deleteToDo(props.uniqueId)}>Delete</button><br />    
+      <div key={props.uniqueId} className="printlistdata">
+        {props.item}
+      </div>
+      <button id="delete-btn" onClick={() => props.deleteToDo(props.uniqueId)}>
+        Delete
+      </button>
     </div>
-    )
+  );
 }
-export default ShowToDoList
+export default ShowToDoList;
