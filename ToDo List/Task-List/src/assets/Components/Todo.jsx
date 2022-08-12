@@ -5,27 +5,29 @@ import ShowToDoList from "./ToDoList";
 function MyToDo() {
   const [newTodo, setnewTodo] = useState(""); // For containing new task
   const [taskList, setTaskList] = useState([]); // For containing entire tasks in single array
-
+  //add todo in input text
   function _handleNewToDo(e) {
     setnewTodo(e.target.value);
   }
-
+  //add todo in list
   function _handleAddToDo() {
     let taskObj = {
       id: new Date().getTime(),
       content: newTodo,
     };
+    //check the contend is fill or not
     if (taskObj.content == "") {
       return alert("Enter content");
     }
     setTaskList([...taskList, taskObj]);
     setnewTodo("");
   }
-
+  //delete the todo item
   function _handleDeleteToDo(id) {
     console.log("LN23", id);
     let oldList = [...taskList];
     console.log("LN25", oldList);
+    //confirm to delete todo item
     const result = confirm("Are you sure to delete this Todo?");
     if (result) {
       let newList = oldList.filter((elem) => {
